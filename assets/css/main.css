@@ -10,10 +10,9 @@ Version: 1.0.0 Last Update:
 /* + body
     01.0 Reboot Area CSS
 	02.0 Spacing Area CSS 
-	03.0 Default/Common Area CSS
-    04.0 Preloader Area CSS
-    05.0 Heading Area CSS
-    06.0 Backtotop Area CSS
+    03.0 Preloader Area CSS
+    04.0 Heading Area CSS
+    05.0 Backtotop Area CSS
     06.0 Buttons Area CSS
     07.0 Header Area CSS
     08.0 Hero Area CSS
@@ -141,7 +140,7 @@ input:focus {
 	padding-bottom: 0;
 }
 
-/* 03.0 Default/Common Area CSS */
+/* 03.0 Heading Area CSS */
 
 .section-heading {
 	margin-bottom: 60px;
@@ -312,7 +311,7 @@ header.header-area {
 
 .top-header .top-header-content a {
 	display: inline-block;
-	/* font-family: "Lato"; */
+	font-family: "Lato";
 	font-weight: 400;
 	font-size: 15px;
 	padding-right: 50px;
@@ -395,7 +394,7 @@ header.header-area {
 	position: absolute;
 	content: "";
 	width: 0;
-	height: 1.5px;
+	height: 2.5px;
 	background: #6927ff;
 	bottom: -7px;
 	left: 0;
@@ -454,7 +453,9 @@ a.header-nav-link:focus:before {
 /* ----------------Hero Css-------------- */
 section.hero-area {
 	position: relative;
-	background: #3883e5;
+	/* background: #3883e5; */
+	background: linear-gradient(45deg, #6d0000f2, #3533334d);
+	/* background: linear-gradient(45deg, #2f0707, #5a02024d); */
 }
 
 .hero-text {
@@ -465,9 +466,9 @@ section.hero-area {
 }
 
 .hero-text p {
-	font-size: 14px;
+	font-size: 18px;
 	font-family: "Lato";
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 }
 
@@ -475,28 +476,26 @@ section.hero-area {
 	font-size: 48px;
 	font-family: "Roboto";
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .hero-text h3 {
-	font-family: Lato;
+	font-family: "Lato";
 	font-weight: 700;
 	font-size: 19px;
+	margin-bottom: 5px;
 }
 
-.hero-features {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	flex-wrap: wrap;
-	white-space: nowrap;
-	line-height: 30px;
-}
-
-.hero-features span {
-	font-family: Lato;
+/* .hero-features p {
+	font-family: "Lato";
 	font-weight: 700;
 	font-size: 16px;
+} */
+
+.hero-features p span::before {
+	margin-left: 0px;
+	font-size: initial;
+	margin-right: 7px;
 }
 
 .hero-thumbnail {
@@ -506,6 +505,7 @@ section.hero-area {
 	right: 10%;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: -1;
 }
 
 .hero-slider-item {
@@ -1999,9 +1999,9 @@ section.hero-area {
 }
 
 .domain-text h2 {
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 24px;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto";
 	margin-bottom: 7px;
 }
 
@@ -2009,6 +2009,7 @@ section.hero-area {
 	font-size: 16px;
 	color: #707070;
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .domain-search-form {
@@ -2023,8 +2024,9 @@ section.hero-area {
 
 .domain-search-form form input[type="search"] {
 	display: block;
-	width: 60%;
-	min-width: 60%;
+	width: calc(100% - 260px);
+	min-width: calc(100% - 260px);
+	max-width: calc(100% - 260px);
 	height: 60px;
 	line-height: 45px;
 	flex: 0 0 60%;
@@ -2037,8 +2039,9 @@ section.hero-area {
 
 .domain-search-form form select {
 	display: block;
-	width: 12%;
-	min-width: 12%;
+	width: 80px;
+	min-width: 80px;
+	max-width: 80px;
 	height: 60px;
 	line-height: 60px;
 	border: none;
@@ -2051,8 +2054,9 @@ section.hero-area {
 }
 
 .domain-search-form form button {
-	width: 22%;
-	min-width: 22%;
+	width: 180px;
+	min-width: 180px;
+	max-width: 180px;
 	height: 60px;
 	background: #38d39f;
 	line-height: 60px;
@@ -2070,17 +2074,18 @@ section.hero-area {
 }
 
 .domain-price span {
+	display: inline-block;
 	color: #38d39f;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 5px 10px;
 	border-radius: 50px;
-	margin: 0px 5px 0px;
-	margin-bottom: 20px;
+	margin: 0px 5px 10px;
 }
 
 .domain-price span small {
 	color: #fff;
 	font-size: 75%;
+	margin-right: 7px;
 }
 
 /* -----------------Service Area Css----------------- */
@@ -2104,7 +2109,7 @@ section.services-area {
 	transition: all 0.3s ease;
 }
 
-.block-6 {
+.block-m-0-40 {
 	margin-bottom: 40px;
 }
 
@@ -2436,6 +2441,46 @@ p.testimonial-name {
 	margin-bottom: 0;
 }
 
+/* Use Service Css */
+.tab-content {
+	padding-bottom: 40px;
+}
+
+.tabs a.tab.tab-link {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #cec9c9;
+	font-size: 18px;
+	font-family: Roboto;
+	font-weight: 700;
+	padding: 10px 15px;
+	margin: 0px 5px;
+	background: transparent;
+	border-radius: 4px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	cursor: pointer;
+	color: #6927ff;
+}
+
+.tabs {
+	display: block;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.tab-desc {
+	padding: 0px 40px;
+}
+
+h4.tab-desc-title {
+	font-family: "Roboto";
+	font-weight: 800;
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
 /* ----------Blog Area Css----------- */
 .blog-wrapper {
 	display: block;
@@ -2620,11 +2665,12 @@ a.btn.get-start-btn {
 	min-width: 150px;
 	min-height: 45px;
 	line-height: 45px;
-	background: #6927ff;
+	/* background: #6927ff; */
+	background: linear-gradient(45deg, #d67b7bf2, #ce7256c9);
 	border-radius: 100px;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 800;
 	padding: 0px 40px;
 	margin-top: 30px;
 }
@@ -2681,6 +2727,8 @@ section.supoort-area {
 .main-footer .footer-logo a.navbar-brand {
 	color: #d0e4ff;
 	text-transform: uppercase;
+	font-family: "Roboto";
+	font-weight: 700;
 }
 
 .main-footer p {
@@ -2754,7 +2802,7 @@ section.supoort-area {
 	display: block;
 	margin-bottom: 10px;
 	transition: all .3s ease;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 /* Footer Bottom */

@@ -13,6 +13,7 @@ hami_window.on('load', function () {
 // *********************************
 // :: 2.0 Hero Slides Active Code
 // *********************************
+
 $('.hero-slider').owlCarousel({
     items: 1,
     loop: true,
@@ -28,7 +29,10 @@ $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
 })
 
-// Tersimonial Slider
+// *********************************
+// :: 3.0 Testimonial Slides Active Code
+// *********************************
+
 $('.testimonial-slide-inner').owlCarousel({
     center: true,
     loop: true,
@@ -54,17 +58,18 @@ $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
 })
 
-// Social ICon Show Js
-$(document).ready(function ($) {
+// *********************************
+// :: 4.0 Blog Social Icon Show Active Code
+// *********************************
 
-    $('.blog-share > a').on('click', function (e) {
-        e.preventDefault() // prevent default action - hash doesn't appear in url
-        $(this).parent().find('div').toggleClass('blog-social-active');
-    });
-
+$('.blog-share > a').on('click', function (e) {
+    e.preventDefault() // prevent default action - hash doesn't appear in url
+    $(this).parent().find('div').toggleClass('blog-social-active');
 });
 
-// Client Slide
+// *********************************
+// :: 4.0 Client Slides Active Code
+// *********************************
 $('.partner-logo-slide-inner ').owlCarousel({
     center: true,
     loop: true,
