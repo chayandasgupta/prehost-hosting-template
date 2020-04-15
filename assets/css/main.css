@@ -103,12 +103,6 @@ input:focus {
 	outline: none;
 }
 
-.btn:hover,
-.btn:focus {
-	color: none;
-	outline: none;
-}
-
 /* :: 2.0 Spacing Ares Css */
 
 .section-padding-80 {
@@ -424,7 +418,15 @@ a.header-nav-link:focus:before {
 	color: #d2ffd2;
 }
 
-/* :: 6.0 Back To Top CSS */
+/* :: 6.0 Header CSS */
+.btn:hover,
+.btn:focus {
+	color: none;
+	outline: none;
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+}
+
+/* :: 7.0 Back To Top CSS */
 #scrollUp {
 	position: fixed;
 	z-index: 999999;
@@ -449,6 +451,8 @@ a.header-nav-link:focus:before {
 	background-color: #000000;
 	color: #ffffff;
 }
+
+
 
 /* ----------------Hero Css-------------- */
 section.hero-area {
@@ -2996,7 +3000,8 @@ ul.blog-info-link li+li::before {
 
 }
 
-.blog-right-sidebar .search-widget .form-control:focus {
+.blog-right-sidebar .search-widget .form-control:focus,
+.blog-right-sidebar .neewsletter-widget .form-control:focus {
 	outline: none;
 	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
 }
@@ -3096,4 +3101,29 @@ li.cata-list-item::after {
 	line-height: normal;
 	margin-bottom: 0;
 	text-transform: capitalize;
+}
+
+.tag-clouds-widget ul.tag-list li {
+	display: inline-block;
+	margin-right: 2px;
+	margin-bottom: 10px;
+}
+
+.tag-clouds-widget ul.tag-list li a {
+	display: inline-block;
+	background: #2575e7;
+	padding: 3px 8px;
+	color: #fff;
+}
+
+.instagram-row>li {
+	display: inline-block;
+	margin: 3px 3px 3px 0px;
+	overflow: hidden;
+}
+
+.instagram-row li a img:hover {
+	overflow: hidden;
+	transform: scale(1.5);
+	transition: all .5s ease
 }
