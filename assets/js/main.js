@@ -1,8 +1,7 @@
-var hami_window = $(window);
-
 // ****************************
 // :: 1.0 Preloader Active Code
 // ****************************
+var hami_window = $(window);
 
 hami_window.on('load', function () {
     $('#preloader').fadeOut('1000', function () {
@@ -36,15 +35,18 @@ $('.stop').on('click', function () {
 $('.testimonial-slide-inner').owlCarousel({
     center: true,
     loop: true,
+    autoplay: true,
     items: 1,
-    margin: 30,
+    margin: 15,
     nav: false,
+    smartSpeed: 1500,
+    autoplayTimeout: 5000,
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 3
+            items: 1
         },
         1000: {
             items: 3
@@ -73,9 +75,12 @@ $('.blog-share > a').on('click', function (e) {
 $('.partner-logo-slide-inner ').owlCarousel({
     center: true,
     loop: true,
+    autoplay: true,
     items: 1,
     margin: 30,
     nav: false,
+    smartSpeed: 1500,
+    autoplayTimeout: 5000,
     responsive: {
         0: {
             items: 1
@@ -164,4 +169,16 @@ hami_window.scrollUp({
 // *********************************
 $('a[href="#"]').on('click', function ($) {
     $.preventDefault();
+});
+
+// *********************************
+// :: Tabs js
+// *********************************
+$(document).ready(function(){ 
+    $('.tab-link').click(function(){  
+        $(".tab").removeClass('tab-active');
+         $(".tab[data-id='"+$(this).attr('data-id')+"']").addClass("tab-active");
+         $(".tab-link").removeClass('active-tab-link');
+         $(this).parent().find(".tab-link").addClass('active-tab-link');
+     });
 });
