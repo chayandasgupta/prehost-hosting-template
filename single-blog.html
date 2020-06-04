@@ -83,22 +83,37 @@
 
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav nav ml-auto mt-2 mt-lg-0">
-                                <li class="nav-item header-nav-item active">
+                                <li class="nav-item active">
                                     <a class="nav-link header-nav-link" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item header-nav-item active">
-                                    <a class="nav-link header-nav-link" href="about-us.html">About Us</a>
+                                <li class="nav-item has-children">
+                                    <a class="nav-link header-nav-link" href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li class="has-children">
+                                            <a href="#">User</a>
+                                            <ul class="dropdown sub-menu">
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="sign-up.html">Sign Up</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="nav-item header-nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link header-nav-link" href="domain.html">Domain</a>
                                 </li>
-                                <li class="nav-item header-nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link header-nav-link" href="hosting.html">Hosting</a>
                                 </li>
-                                <li class="nav-item header-nav-item active">
-                                    <a class="nav-link header-nav-link" href="single-blog.html">Blog</a>
+                                <li class="nav-item has-children">
+                                    <a class=" nav-link header-nav-link" href="single-blog.html">Blog</a>
+                                    <ul class="dropdown sub-menu">
+                                        <li><a href="single-blog.html">Single Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
                                 </li>
-                                <li class="nav-item header-nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link header-nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
@@ -132,6 +147,9 @@
                             </li>
                             <li class="breadcrumb-item breadcrumb-active">
                                 Blog
+                            </li>
+                            <li class="breadcrumb-item breadcrumb-active">
+                                Single Blog
                             </li>
                         </ul>
                     </div>
@@ -278,7 +296,7 @@
 
                         <!-- Single Sidebar Category Widget -->
                         <aside class="single-sidebar-widget category-widget">
-                            <h1 class="widgwt-title">Categories</h1>
+                            <h1 class="widget-title">Categories</h1>
                             <ul class="cata-list">
                                 <li class="cata-list-item"><a href="#"><i class="fa fa-angle-double-right"></i>Content
                                         Marketing</a></li>
@@ -297,7 +315,7 @@
 
                         <!-- Single Sidebar Popular Post Widget -->
                         <aside class="single-sidebar-widget popular-post-widget">
-                            <h1 class="widgwt-title">Recent Post</h1>
+                            <h1 class="widget-title">Recent Post</h1>
                             <!-- Single Recent Post -->
                             <div class="recent-post">
                                 <div class="recent-post-thumb">
@@ -356,7 +374,7 @@
 
                         <!-- Single Sidebar Tag Clouds Widget -->
                         <aside class="single-sidebar-widget tag-clouds-widget">
-                            <h1 class="widgwt-title">Tag Clouds</h1>
+                            <h1 class="widget-title">Tag Clouds</h1>
                             <ul class="tag-list">
                                 <li><a href="#">project</a></li>
                                 <li><a href="#">Creative</a></li>
@@ -371,7 +389,7 @@
 
                         <!-- Single Sidebar Instagram Widget -->
                         <aside class="single-sidebar-widget instagram-widget">
-                            <h1 class="widgwt-title">Instagram Feeds</h1>
+                            <h1 class="widget-title">Instagram Feeds</h1>
                             <ul class="instagram-row">
                                 <li><a href="#"><img src="assets/img/post_8.webp" alt=""></a></li>
                                 <li><a href="#"><img src="assets/img/post_9.webp" alt=""></a></li>
@@ -386,12 +404,12 @@
 
                         <!-- Single Sidebar Newsletter Widget -->
                         <aside class="single-sidebar-widget neewsletter-widget">
-                            <h1 class="widgwt-title">Newsletter</h1>
+                            <h1 class="widget-title">Newsletter</h1>
                             <form action="">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Enter Email">
                                 </div>
-                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                                <button class="btn default-btn" type="submit">Subscribe</button>
                             </form>
                         </aside>
                     </div>
