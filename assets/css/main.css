@@ -292,25 +292,6 @@ a.link-hover:hover {
 	font-size: 25px;
 }
 
-/*.section-heading span.sub-heading {
-	font-family: "Roboto";
-	font-weight: 700;
-	font-size: 14px;
-	letter-spacing: 2px;
-	color: #4a6385;
-	margin-bottom: 4px;
-	display: block;
-	text-transform: uppercase;
-}*/
-
-/* .section-heading h1 {
-	font-family: "Roboto";
-	font-weight: 700;
-	font-size: 40px;
-	margin-bottom: 15px;
-	text-transform: capitalize;
-} */
-
 .section-heading p {
 	font-size: 15px;
 	display: block;
@@ -407,41 +388,25 @@ header.header-area {
 	right: 5px;
 }
 
-.top-header-content .dropdown .dropdown-menu a.dropdown-item {
-	color: #000;
-	text-shadow: none;
-}
-
-.top-header-content .dropdown .dropdown-menu a.dropdown-item:hover {
-	background: #1c66de;
-	color: #fff;
-}
-
 .main-header {
 	background: transparent;
 	padding: 5px 0px 2px;
 }
 
-.main-header .nav-container {
-	width: 100%;
-	background: transparent;
-	padding: 0;
-}
-
-.main-header .nav-container nav.classy-navbar {
+.main-header nav.classy-navbar {
 	transition-duration: 500ms;
 	justify-content: space-between;
 	margin-left: -15px;
 	margin-right: -15px;
 }
 
-.main-header .nav-container nav.classy-navbar .header-logo {
+.main-header nav.classy-navbar .header-logo {
 	display: block;
 	max-width: 170px;
 	margin-right: 1rem;
 }
 
-.main-header .nav-container nav.classy-navbar .header-logo a.navbar-brand {
+.main-header nav.classy-navbar .header-logo a.navbar-brand {
 	text-transform: uppercase;
 	font-size: 22px;
 	font-family: "Roboto";
@@ -450,25 +415,25 @@ header.header-area {
 	margin: 0;
 }
 
-.main-header .header-nav-menu .header-nav {
-	display: flex;
-	align-items: baseline;
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-.main-header .header-nav-menu .header-nav .nav li.header-nav-item a.header-nav-link {
+li.nav-item.header-nav-item {
+	position: relative;
+	margin-right: 35px;
+}
+
+a.header-nav-link {
 	color: #fff;
-	font-family: "Open Sans";
+	font-family: "Roboto";
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.main-header .header-nav-menu .header-nav .nav li.header-nav-item {
-	margin-right: 50px;
-	position: relative;
-}
-
-.main-header .header-nav-menu .header-nav .nav li.header-nav-item a.header-nav-link:before {
+.main-header li.header-nav-item a.header-nav-link:before {
 	position: absolute;
 	content: "";
 	width: 0;
@@ -486,21 +451,78 @@ a.header-nav-link:focus:before {
 	width: 100% !important;
 }
 
-.main-header .header-nav-menu .header-nav a.live-chat-btn {
+.main-header a.live-chat-btn {
 	height: 50px;
 	border-radius: 100px;
 	min-width: 150px;
-	line-height: 35px;
+	line-height: 30px;
 	color: #fff;
 	transition-duration: 500ms;
 	font-weight: 700;
 	background-image: linear-gradient(to bottom right, #fa4612, #ff416c);
 }
 
-.main-header .header-nav-menu .header-nav a.live-chat-btn:hover {
+.main-header a.live-chat-btn:hover {
 	background: transparent;
 	color: #d2ffd2;
 	border: 1px solid;
+}
+
+/* Dropdown Cssss */
+.classy-navbar li.nav-item.has-children {
+	position: relative;
+}
+
+.classy-navbar li.nav-item.has-children ul.dropdown {
+	position: absolute;
+	top: 49px;
+	left: 0;
+	background-color: #ffffff;
+	min-width: 150px;
+	z-index: 9999;
+	box-shadow: 0 0px 6px 3px rgba(0, 0, 0, 0.05);
+	text-align: left;
+	margin-top: 10px;
+	transition: all .5s ease;
+	border-radius: 1px;
+	visibility: hidden;
+}
+
+.classy-navbar li.nav-item.has-children ul.dropdown li {
+	display: block;
+	position: relative;
+	padding: 5px 20px;
+	border-bottom: 1px solid #ebefef;
+	width: 100%;
+}
+
+.classy-navbar li.nav-item.has-children ul.dropdown li a {
+	position: relative;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: Roboto;
+	color: rgba(0, 0, 0, .6);
+	display: block;
+	padding: 5px 0px;
+	line-height: normal;
+	transition: all .5s ease;
+}
+
+.classy-navbar li.nav-item.has-children:focus>ul.dropdown,
+.classy-navbar li.nav-item.has-children:hover>ul.dropdown {
+	transition: all .5s ease;
+	margin-top: -1px;
+	visibility: visible;
+	opacity: 1;
+}
+
+li.nav-item.has-children ul.dropdown li a:hover {
+	color: rgba(0, 0, 0, 2);
+	margin-left: 5px;
+}
+
+.site-navigation .site-menu li.nav-item.has-children .dropdown li:last-child {
+	border-bottom: 0;
 }
 
 /* :: 7.0 Button CSS */
@@ -528,8 +550,8 @@ a.header-nav-link:focus:before {
 	margin-top: 30px;
 }
 
-a.btn.get-start-btn {
-	/* background: #6927ff; */
+.default-btn:hover {
+	color: #222;
 }
 
 .service-instruction-area .default-btn {
@@ -543,7 +565,7 @@ a.btn.get-start-btn {
 section.hero-area {
 	position: relative;
 	background: #04063c;
-	z-index: 1;
+	z-index: -1;
 }
 
 .hero-text {
@@ -617,7 +639,7 @@ section.hero-area {
 .clouds img {
 	position: absolute;
 	top: 0;
-	z-index: 1;
+	z-index: -1;
 }
 
 /* @media only screen and (min-width: 1920px) and (max-width: 5000px) {
@@ -4375,11 +4397,6 @@ ul.has-childrean li a {
 
 
 
-
-
-
-
-
 .single-hosting-services {
 	align-items: flex-start;
 	box-shadow: none;
@@ -4789,4 +4806,17 @@ a.tearm-service {
 .expert-team-area .single-team span {
 	color: #fff;
 	font-size: 13px;
+}
+
+
+
+/* Responsive Css */
+@media only screen and (max-width: 768px) {
+	.top-header {
+		display: none;
+	}
+
+	.live-chat-btn {
+		margin-top: 15px;
+	}
 }
