@@ -174,11 +174,29 @@ $('a[href="#"]').on('click', function ($) {
 // *********************************
 // :: Tabs js
 // *********************************
-$(document).ready(function(){ 
-    $('.tab-link').click(function(){  
+$(document).ready(function () {
+    $('.tab-link').click(function () {
         $(".tab").removeClass('tab-active');
-         $(".tab[data-id='"+$(this).attr('data-id')+"']").addClass("tab-active");
-         $(".tab-link").removeClass('active-tab-link');
-         $(this).parent().find(".tab-link").addClass('active-tab-link');
-     });
+        $(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+        $(".tab-link").removeClass('active-tab-link');
+        $(this).parent().find(".tab-link").addClass('active-tab-link');
+    });
+});
+
+// *********************************
+// ::  COunting NUmber
+// 
+$('.counter').each(function () {
+    var $this = $(this);
+    $({
+        count: 0
+    }).animate({
+        count: $this.text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function () {
+            $this.text(Math.ceil(this.count));
+        }
+    });
 });

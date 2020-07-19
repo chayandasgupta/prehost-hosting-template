@@ -171,8 +171,16 @@
                             <div class="blog-img">
                                 <img src="assets/img/single_blog_1.png" alt="" class="img-fluid border-tlr-radious ">
                                 <a href="#" class="blog-item-date">
-                                    <h2>15</h2>
-                                    <p>jan</p>
+                                    <h2><script>document.write(new Date().getDate())</script></h2>
+                                    <p>
+                                        <script>
+                                        const monthNames = ["January", "February", "March", "April", "May", "June",
+                                              "July", "August", "September", "October", "November", "December"
+                                            ];
+
+                                        const d = new Date();
+                                        document.write(monthNames[d.getMonth()]);</script>
+                                    </p>
                                 </a>
                             </div>
                             <!-- Details -->
