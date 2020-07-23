@@ -186,17 +186,28 @@ $(document).ready(function () {
 // *********************************
 // ::  COunting NUmber
 // 
-$('.counter').each(function () {
+$('.counter').each(function(){
     var $this = $(this);
-    $({
-        count: 0
-    }).animate({
-        count: $this.text()
-    }, {
+    var countNumber = $this.text();
+    var count = 0;
+    $({ count }).animate({ count: countNumber },{
         duration: 2000,
-        easing: 'swing',
-        step: function () {
-            $this.text(Math.ceil(this.count));
+        eassing: 'swing',
+        step: function(){
+            $this.text(Math.ceil(this.count))
         }
-    });
-});
+    })
+})
+// *********************************
+// ::  Initial wow js
+// 
+// wow = new WOW(
+//     {
+//       boxClass:     'wow',      // default
+//       animateClass: 'animated', // default
+//       offset:       0,          // default
+//       mobile:       true,       // default
+//       live:         true        // default
+//     }
+// )
+// wow.init();
