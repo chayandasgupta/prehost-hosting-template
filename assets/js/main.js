@@ -70,7 +70,7 @@ $('.blog-share > a').on('click', function (e) {
 });
 
 // *********************************
-// :: 4.0 Client Slides Active Code
+// :: 5.0 Client Slides Active Code
 // *********************************
 $('.partner-logo-slide-inner ').owlCarousel({
     center: true,
@@ -97,8 +97,8 @@ $('.play').on('click', function () {
     owl.trigger('play.owl.autoplay', [4000])
 })
 $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
+    owl.trigger('stop.owl.autoplay')
+})
 
     // ScroolToTop
     ! function (l, o, e) {
@@ -165,27 +165,28 @@ hami_window.scrollUp({
 });
 
 // *********************************
-// :: 12.0 Prevent Default 'a' Click
+// ::6.0 Prevent Default 'a' Click
 // *********************************
 $('a[href="#"]').on('click', function ($) {
     $.preventDefault();
 });
 
 // *********************************
-// :: Tabs js
+// ::7.0 Tabs Js For Service Instruction Area
 // *********************************
 $(document).ready(function () {
     $('.tab-link').click(function () {
-        $(".tab").removeClass('tab-active');
-        $(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+        $(".tab").removeClass('active-tab');
+        $(".tab[data-id='"+$(this).attr('data-id')+"']").addClass("active-tab");
         $(".tab-link").removeClass('active-tab-link');
-        $(this).parent().find(".tab-link").addClass('active-tab-link');
+        $(this).addClass('active-tab-link');
     });
 });
 
+
 // *********************************
-// ::  COunting NUmber
-// 
+// ::8.0  Counting NUmber
+// *********************************
 $('.counter').each(function(){
     var $this = $(this);
     var countNumber = $this.text();
@@ -198,16 +199,40 @@ $('.counter').each(function(){
         }
     })
 })
+
 // *********************************
-// ::  Initial wow js
-// 
-// wow = new WOW(
-//     {
-//       boxClass:     'wow',      // default
-//       animateClass: 'animated', // default
-//       offset:       0,          // default
-//       mobile:       true,       // default
-//       live:         true        // default
-//     }
-// )
-// wow.init();
+// ::9.0  Initial Location Show In Map
+// *********************************
+$(document).ready(function () {
+    $(".single-location").hover(function () {
+        $(this).find("span").show();
+    }, function () {
+        $(this).find("span").hide()
+    })
+});
+
+// *********************************
+// ::11.0  Initial Sitcky Navigation
+// *********************************
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// ::10.0  Initial wow js
+// *********************************
+// $(window).on('load', function(){
+
+//      new WOW().init(); 
+// });
+
+
+

@@ -2,8 +2,7 @@
 [Master Stylesheet] 
 Template Name: PREHOST - Web Hosting HTML Template Template 
 Author: Chayan
-Author URL:
-Version: 1.0.0 Last Update:   
+Author URL:  
 
 --------------------*/
 /* ------------- [Tables of CSS Content] ------------------*/
@@ -49,6 +48,7 @@ body {
 	z-index: auto;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -445,6 +445,8 @@ a.header-nav-link {
 .main-header a.live-chat-btn:hover {
 	color: #000;
 }
+
+
 
 /*----------- Dropdown Css ------------*/
 
@@ -2512,18 +2514,18 @@ p.block-text {
 }
 
 /* Service instruction area css */
-.tabs {
+.tabs-filter {
 	display: block;
 	position: relative;
 	margin-bottom: 80px;
 }
 
-a.active-tab-link {
+.tabs-filter a.active-tab-link {
 	background-color: #4e2f94;
 	color: #ffffff !important;
 }
 
-.tabs a.tab-link {
+.tabs-filter a.tab-link {
 	position: relative;
 	display: inline-block;
 	border: 1px solid #22105f42;
@@ -2542,11 +2544,11 @@ a.active-tab-link {
 	display: none;
 }
 
-.tab-active {
+.active-tab {
 	display: block;
 }
 
-.tab-content {
+.tab-wrap {
 	padding-bottom: 40px;
 }
 
@@ -4672,7 +4674,6 @@ a.tearm-service {
 
 .single-team .team-man {
 	position: absolute;
-	align-items: center;
 	top: 8%;
 	left: 0;
 	width: 100%;
