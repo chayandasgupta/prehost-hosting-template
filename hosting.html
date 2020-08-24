@@ -29,7 +29,7 @@
                     <div class="col-md-6">
                         <div class="top-header-content">
                             <a href="#" class="link-hover">
-                                Have any question?
+                                <i class="fas fa-question-circle top-header-icon"></i>Have any question?
                             </a>
                             <a href="#" class="link-hover">
                                 <i class="fas fa-envelope top-header-icon"></i> infinity@gmail.com
@@ -40,11 +40,11 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="top-header-content">
+                        <div class="top-header-content justify-content-md-end">
                             <a href="auth.html" class="link-hover">
                                 <i class="fas fa-lock top-header-icon"></i> Login/Register
                             </a>
-                            <div class="dropdown">
+                            <!-- <div class="dropdown">
                                 <a href="#" class="btn dropdown-toggle link-hover pr-0" role="button" id="langdropdown"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="assets/img/flag.png" alt="country-flag">
@@ -54,8 +54,7 @@
                                     <a href="#" class="dropdown-item">Hindi</a>
                                     <a href="#" class="dropdown-item">Bangla</a>
                                     <a href="#" class="dropdown-item">Latin</a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
                     </div>
                 </div>
@@ -65,66 +64,64 @@
 
         <!-- Main Header Start -->
         <div class="main-header">
-            <div class="nav-container">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg classy-navbar">
-                        <!-- Logo -->
-                        <div class="header-logo">
-                            <a href="#" class="navbar-brand">
-                                <img src="assets/img/logoicon.png" alt="">
-                                JoomHost
-                            </a>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg classy-navbar" id="navbar">
+                    <!-- Logo -->
+                    <div class="header-logo">
+                        <a href="#" class="navbar-brand">
+                            <img src="assets/img/logoicon.png" alt="">
+                            JoomHost
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                            <ul class="navbar-nav nav ml-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link header-nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item has-children">
-                                    <a class="nav-link header-nav-link" href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li class="has-children">
-                                            <a href="#">User</a>
-                                            <ul class="dropdown sub-menu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="sign-up.html">Sign Up</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link header-nav-link" href="domain.html">Domain</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link header-nav-link" href="hosting.html">Hosting</a>
-                                </li>
-                                <li class="nav-item has-children">
-                                    <a class=" nav-link header-nav-link" href="single-blog.html">Blog</a>
-                                    <ul class="dropdown sub-menu">
-                                        <li><a href="single-blog.html">Single Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link header-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <!-- Live Chat -->
-                            <div class="live-chat-btn-area ml-2">
-                                <a href="#" class="btn live-chat-btn"><i class="fa fa-comments" aria-hidden="true"></i>
-                                    Live Chat</a>
-                            </div>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link header-nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item has-children">
+                                <a class="nav-link header-nav-link" href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li class="has-children">
+                                        <a href="#">User</a>
+                                        <ul class="dropdown sub-menu">
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="sign-up.html">Sign Up</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-nav-link" href="domain.html">Domain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-nav-link" href="hosting.html">Hosting</a>
+                            </li>
+                            <li class="nav-item has-children">
+                                <a class=" nav-link header-nav-link" href="#">Blog</a>
+                                <ul class="dropdown sub-menu">
+                                    <li><a href="single-blog.html">Single Blog</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Live Chat -->
+                        <div class="live-chat-btn-area ml-2">
+                            <a href="#" class="btn live-chat-btn"><i class="fa fa-comments" aria-hidden="true"></i>
+                                Live Chat</a>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
         <!-- Main Header End -->
@@ -597,83 +594,80 @@
     <!-- Frequently Area End -->
 
     <!-- Testmonial Area Start -->
-    <section class="testimonial-area section-padding-100">
-        <div class="container">
-            <!-- Section Heading -->
-            <div class="section-heading">
-                <h1 class="head-title">Our Satisfied Customer Says</h1>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in</p>
-            </div>
-            <!-- Slider -->
-            <div class="tesimonial-slides">
-                <div class="testimonial-slide-inner owl-carousel">
-                    <!-- Testimonial Slide Item -->
-                    <div class="testimonial-slider-item">
-                        <div class="layer"></div>
-                        <div class="testmonial-content">
-                            <div class="user-img">
-                                <img src="assets/img/person_1.jpg" alt="">
-                                <span class="quote">
-                                    <i class="fa fa-quote"></i>
-                                </span>
-                            </div>
-                            <div class="testimonial-slide-details">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.
-                                </p>
-                                <p class="testimonial-name">Mark</p>
-                                <span class="position">Web Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial Slide Item -->
-                    <div class="testimonial-slider-item">
-                        <div class="layer"></div>
-                        <div class="testmonial-content">
-                            <div class="user-img">
-                                <img src="assets/img/person_2.jpg" alt="">
-                                <span class="quote">
-                                    <i class="fa fa-quote"></i>
-                                </span>
-                            </div>
-                            <div class="testimonial-slide-details">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.
-                                </p>
-                                <p class="testimonial-name">Mark</p>
-                                <span class="position">Web Developer</span>
+        <section class="testimonial-area section-padding-100">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="section-heading">
+                    <h1 class="head-title">Our Satisfied Customer Says</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in</p>
+                </div>
+                <!-- Slider -->
+                <div class="tesimonial-slides">
+                    <div class="testimonial-slide-inner owl-carousel">
+                        <!-- Testimonial Slide Item -->
+                        <div class="testimonial-slider-item">
+                            <div class="testmonial-content">
+                                <div class="client-img">
+                                    <img src="assets/img/person_1.jpg" alt="">
+                                    <span class="quote">
+                                        <i class="fa fa-quote-right"></i>
+                                    </span>
+                                </div>
+                                <div class="testimonial-slide-details">
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="testimonial-client-name">Mark</p>
+                                    <span class="position">Web Developer</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Testimonial Slide Item -->
-                    <div class="testimonial-slider-item">
-                        <div class="layer"></div>
-                        <div class="testmonial-content">
-                            <div class="user-img">
-                                <img src="assets/img/person_3.jpg" alt="">
-                                <span class="quote">
-                                    <i class="fa fa-quote"></i>
-                                </span>
+                        <!-- Testimonial Slide Item -->
+                        <div class="testimonial-slider-item">
+                            <div class="testmonial-content">
+                                <div class="client-img">
+                                    <img src="assets/img/person_2.jpg" alt="">
+                                    <span class="quote">
+                                       <i class="fa fa-quote-right"></i>
+                                    </span>
+                                </div>
+                                <div class="testimonial-slide-details">
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="testimonial-client-name">Mark</p>
+                                    <span class="position">Web Developer</span>
+                                </div>
                             </div>
-                            <div class="testimonial-slide-details">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.
-                                </p>
-                                <p class="testimonial-name">Mark</p>
-                                <span class="position">Web Developer</span>
+                        </div>
+                        <!-- Testimonial Slide Item -->
+                        <div class="testimonial-slider-item">
+                            <div class="testmonial-content">
+                                <div class="client-img">
+                                    <img src="assets/img/person_3.jpg" alt="">
+                                    <span class="quote">
+                                        <i class="fa fa-quote-right"></i>
+                                    </span>
+                                </div>
+                                <div class="testimonial-slide-details">
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="testimonial-client-name">Mark</p>
+                                    <span class="position">Web Developer</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Shape -->
+                <div class="shape shape-one">
+                    <img src="assets/img/client (1).png" alt="">
+                </div>
             </div>
-            <!-- Shape -->
-            <div class="shape shape-one">
-                <img src="assets/img/client (1).png" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Testmonial Area End -->
+        </section>
+        <!-- Testmonial Area End -->
 
     <!-- Partner/Client Area Start -->
     <section class="partner-area section-padding-100">
