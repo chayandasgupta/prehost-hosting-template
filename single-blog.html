@@ -171,12 +171,13 @@
                                     <h2><script>document.write(new Date().getDate())</script></h2>
                                     <p>
                                         <script>
-                                        const monthNames = ["January", "February", "March", "April", "May", "June",
-                                              "July", "August", "September", "October", "November", "December"
-                                            ];
+                                            const monthNames = ["January", "February", "March", "April", "May", "June",
+                                                  "July", "August", "September", "October", "November", "December"
+                                                ];
 
-                                        const d = new Date();
-                                        document.write(monthNames[d.getMonth()]);</script>
+                                            var d = new Date(dateString);
+                                            var dayName = d.toString().split(' ')[0];
+                                        </script>
                                     </p>
                                 </a>
                             </div>

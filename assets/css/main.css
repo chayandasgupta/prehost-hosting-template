@@ -2701,7 +2701,7 @@ ul.has-childrean li a {
 .frequently-icon {
 	display: flex;
 	align-items: center;
-	background: #00A7F2;
+	background: #4e2f94;
 	width: 80px;
 	height: 80px;
 	color: #fff;
@@ -2786,7 +2786,7 @@ ul.has-childrean li a {
 }
 
 .single-domain.block-hover:hover {
-	background: #00a7f5;
+	background: #4e2f94;
 }
 
 .single-domain.block-hover:hover p,
@@ -3102,13 +3102,15 @@ input[type="checkbox"] {
 	font-weight: 600;
 }
 
-.form-action .login-btn {
+.form-action .sign-btn{
 	margin-top: 30px;
 	max-width: 120px;
 	padding: 10px;
 	font-size: 15px;
 	font-weight: 550;
 	font-family: Lato;
+	background: #fc4529;
+    border: none; 
 }
 
 .signin-form .social-area {
