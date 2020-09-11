@@ -3102,16 +3102,17 @@ input[type="checkbox"] {
 	font-weight: 600;
 }
 
-.form-action .sign-btn{
-	margin-top: 30px;
-	max-width: 120px;
-	padding: 10px;
-	font-size: 15px;
-	font-weight: 550;
-	font-family: Lato;
-	background: #fc4529;
+.form-action .sign-btn {
+    margin-top: 30px;
+    max-width: 120px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: Lato;
+    background: #fc4529;
     border: none;
-    color: #fff; 
+    color: #fff;
+    border-radius: 3px;
 }
 
 .signin-form .social-area {
