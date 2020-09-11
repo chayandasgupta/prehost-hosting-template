@@ -3110,7 +3110,8 @@ input[type="checkbox"] {
 	font-weight: 550;
 	font-family: Lato;
 	background: #fc4529;
-    border: none; 
+    border: none;
+    color: #fff; 
 }
 
 .signin-form .social-area {
