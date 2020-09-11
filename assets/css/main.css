@@ -3056,7 +3056,7 @@ ul.has-childrean li a {
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0px;
-	z-index: 1;
+	z-index: 999;
 	color: #fff;
 }
 
